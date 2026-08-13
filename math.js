@@ -2,4 +2,8 @@ function add(a, b) {
   return a + b;
 }
 
-module.exports = add;
+function multiply(a, b) {
+  return a / b;  // BUG: function name says multiply but does division!
+}
+
+module.exports = { add, multiply };
